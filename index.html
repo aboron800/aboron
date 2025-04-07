@@ -2,58 +2,47 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>আবরণ | Abaron</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আবরণ - ছেলেদের পোশাক</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; background: #f2f2f2; }
+        header { background-color: #1a1a1a; color: white; padding: 20px; text-align: center; }
+        section { padding: 20px; }
+        .products { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .product { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 200px; text-align: center; padding: 10px; }
+        .product img { width: 100%; height: auto; border-radius: 5px; }
+        footer { background-color: #1a1a1a; color: white; text-align: center; padding: 10px; }
+    </style>
 </head>
-<body class="bg-white text-gray-800">
-  <header class="bg-yellow-50 shadow p-4">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <h1 class="text-3xl font-bold text-yellow-700">আবরণ</h1>
-      <nav>
-        <ul class="flex space-x-4">
-          <li><a href="#home" class="hover:text-yellow-600">হোম</a></li>
-          <li><a href="#products" class="hover:text-yellow-600">পণ্যসমূহ</a></li>
-          <li><a href="#contact" class="hover:text-yellow-600">যোগাযোগ</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="home" class="text-center py-16 bg-yellow-100">
-    <h2 class="text-4xl font-semibold mb-4">বাংলার ঐতিহ্যে মোড়ানো ফ্যাশন</h2>
-    <p class="text-lg text-gray-600 mb-6">আবরণ-এ পাবেন দেশীয় নকশার আধুনিক ছোঁয়া</p>
-    <a href="#products" class="bg-yellow-600 text-white px-6 py-2 rounded hover:bg-yellow-700">পণ্য দেখুন</a>
-  </section>
-
-  <section id="products" class="py-12 max-w-7xl mx-auto">
-    <h3 class="text-2xl font-bold text-center mb-8">আমাদের পণ্যসমূহ</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
-      <div class="border rounded-lg p-4 shadow hover:shadow-lg">
-        <img src="https://via.placeholder.com/300x400" alt="শাড়ি" class="mb-4 w-full h-80 object-cover rounded">
-        <h4 class="text-lg font-semibold">সুন্দর শাড়ি</h4>
-        <p class="text-yellow-700 font-bold">৳১২৫০</p>
-        <button class="mt-2 bg-yellow-600 text-white px-4 py-1 rounded hover:bg-yellow-700">অর্ডার করুন</button>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="bg-yellow-50 py-12">
-    <div class="max-w-xl mx-auto text-center">
-      <h3 class="text-2xl font-bold mb-4">যোগাযোগ করুন</h3>
-      <p class="mb-4">আপনার অর্ডার বা যেকোনো প্রশ্নের জন্য আমাদের সাথে যোগাযোগ করুন</p>
-      <form class="space-y-4">
-        <input type="text" placeholder="আপনার নাম" class="w-full border p-2 rounded">
-        <input type="email" placeholder="ইমেইল ঠিকানা" class="w-full border p-2 rounded">
-        <textarea placeholder="বার্তা লিখুন" class="w-full border p-2 rounded"></textarea>
-        <button class="bg-yellow-600 text-white px-6 py-2 rounded hover:bg-yellow-700">পাঠান</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="text-center p-4 bg-yellow-100 mt-8">
-    <p>&copy; ২০২৫ আবরণ | সর্বস্বত্ব সংরক্ষিত</p>
-  </footer>
+<body>
+    <header>
+        <h1>আবরণ</h1>
+        <p>ছেলেদের স্টাইলিশ পোশাকের বিশ্বস্ত ঠিকানা</p>
+    </header>
+    <section>
+        <h2>আমাদের সংগ্রহ</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://i.imgur.com/3yAfBvG.jpg" alt="পাঞ্জাবি">
+                <p>স্টাইলিশ পাঞ্জাবি</p>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/tE4dM9f.jpg" alt="শার্ট">
+                <p>ক্যাজুয়াল শার্ট</p>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/CbFt8il.jpg" alt="টি-শার্ট">
+                <p>প্রিন্টেড টি-শার্ট</p>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/Bbz7H9Y.jpg" alt="প্যান্ট">
+                <p>ডেনিম প্যান্ট</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; ২০২৫ আবরণ | সর্বস্বত্ব সংরক্ষিত</p>
+    </footer>
 </body>
 </html>
